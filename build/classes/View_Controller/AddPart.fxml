@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddPartController">
+   <children>
+      <Label id="lbl_apTitle" layoutX="49.0" layoutY="54.0" text="Add Part" textFill="#150983">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Group layoutX="240.0" layoutY="68.0" />
+      <RadioButton id="rbtn_apOutsourced" fx:id="rad_outsourced" layoutX="383.0" layoutY="58.0" mnemonicParsing="false" onAction="#outsourcedSelected" text="Outsourced" />
+      <RadioButton id="rbtn_apInHouse" fx:id="rad_inHouse" layoutX="239.0" layoutY="59.0" mnemonicParsing="false" onAction="#inHouseSelected" selected="true" text="In House" />
+      <TextField id="txt_apId" fx:id="txt_addPartId" disable="true" editable="false" layoutX="273.0" layoutY="105.0" text="Auto Generated" />
+      <TextField id="txt_apName" fx:id="txt_addPartName" layoutX="273.0" layoutY="138.0" text="Part 1" />
+      <TextField id="txt_apInv" fx:id="txt_addPartInv" layoutX="273.0" layoutY="175.0" text="200" />
+      <TextField id="txt_apPrice" fx:id="txt_addPartPrice" layoutX="273.0" layoutY="210.0" text="5.00" />
+      <TextField id="txt_apMax" fx:id="txt_addPartMax" layoutX="271.0" layoutY="256.0" prefHeight="25.0" prefWidth="58.0" text="300" />
+      <TextField id="txt_apMin" fx:id="txt_addPartMin" layoutX="408.0" layoutY="256.0" prefHeight="25.0" prefWidth="58.0" text="5" />
+      <TextField id="txt_apCanChange" fx:id="txt_addPartNameOrId" layoutX="271.0" layoutY="300.0" text="5" />
+      <Label id="lbl_apId" layoutX="172.0" layoutY="109.0" text="ID" />
+      <Label id="lbl_apName" layoutX="170.0" layoutY="142.0" text="Name" />
+      <Label id="lbl_apInv" layoutX="170.0" layoutY="179.0" text="Inv" />
+      <Label id="lbl_apPrice" layoutX="170.0" layoutY="214.0" text="Price/Cost" />
+      <Label id="lbl_apMax" layoutX="173.0" layoutY="260.0" text="Max" />
+      <Label id="lbl_mpMin" layoutX="362.0" layoutY="260.0" text="Min" />
+      <Label id="lbl_apCanChange" fx:id="lbl_nameOrId" layoutX="173.0" layoutY="304.0" text="Machine Id" />
+      <Button id="btn_mpSave" fx:id="btn_addPartSave" layoutX="271.0" layoutY="350.0" mnemonicParsing="false" onAction="#savePart" text="Save" />
+      <Button id="btn_mpCancel" fx:id="btn_addPartCancel" layoutX="373.0" layoutY="350.0" mnemonicParsing="false" onAction="#btn_cancel" text="Cancel" />
+   </children>
+</AnchorPane>

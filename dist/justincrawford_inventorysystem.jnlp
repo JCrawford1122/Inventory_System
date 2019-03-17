@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="justincrawford_inventorysystem.jnlp">
+  <information>
+    <title>justincrawford_inventorysystem</title>
+    <vendor>crawf</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="justincrawford_inventorysystem.jar" size="22491" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="justincrawford_inventorysystem" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="justincrawford_inventorysystem.Justincrawford_inventorysystem"  name="justincrawford_inventorysystem" />
+  <update check="always"/>
+</jnlp>
